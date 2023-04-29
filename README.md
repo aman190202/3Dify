@@ -1,6 +1,6 @@
 # 3DIFY
 ## Constructing 3D point clouds out of 2D images
-<img src="assets/Screenshot 2023-04-26 at 10.59.23 AM.png"/>
+<img src="assets/comp.png"/>
 https://user-images.githubusercontent.com/48821634/234483878-c5be9631-f43c-4e2a-999f-1bf70d4cc5bd.mov
 
 ### Inspiration

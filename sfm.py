@@ -259,6 +259,7 @@ class Sfm():
             error, points_3d = self.reprojection_error(points_3d, cm_mask_1, transform_matrix_1, self.img_obj.K, homogenity = 1)
             print("Reprojection Error: ", error)
             pose_array = np.hstack((pose_array, pose_2.ravel()))
+
             # takes a long time to run
             if enable_bundle_adjustment:
                 points_3d, cm_mask_1, transform_matrix_1 = self.bundle_adjustment(points_3d, cm_mask_1, transform_matrix_1, self.img_obj.K, threshold)
@@ -299,6 +300,6 @@ class Sfm():
         np.savetxt(self.img_obj.path + '/res/' + self.img_obj.image_list[0].split('/')[-2]+'_pose_array.csv', pose_array, delimiter = '\n')
 
 if __name__ == '__main__':
-    sfm = Sfm("satyam_sai")
+    sfm = Sfm("Lamp")
     sfm()
 
